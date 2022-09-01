@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* toolBOX css */
+.toolbox {
+  height: 4.5rem;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+}
+.toolbox > * {
+  margin-left: 4.2%;
+  border-radius: 4px;
+}
+.tool-property-cont {
+  height: 3rem;
+  width: 16rem;
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.tool-btn-cont {
+  height: 3rem;
+  width: 8rem;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.color {
+  height: 2rem;
+  width: 3rem;
+  background-color: blueviolet;
+  border-radius: 4px;
+}
+.tool-btn-cont > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-size: 2rem;
+  color: #e4f9f5;
+  padding: 8px;
+}
+
+.lightpink {
+  background-color: lightpink;
+}
+.lightgreen {
+  background-color: lightgreen;
+}
+.lightblue {
+  background-color: rgb(115, 197, 224);
+}
+.violet {
+  background-color: blueviolet;
+}
+.add-btn {
+  border-radius: 8px;
+}
+.remobtn {
+  border-radius: 8px;
+}
+.add-btn:hover {
+  background-color: green;
+  border-radius: 8px;
+}
+.remobtn:hover {
+  background-color: red;
+  border-radius: 8px;
+}
+/* main contaner css */
+/* ticikets css */
+.mainUper-cont{
+  /* border: 2px solid red; */
+  height: 60vh;
+  width: 45vw;
+  top: calc((100vh - 60vh) / 2);
+  left: calc((100vw - 45vw) / 2);
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
+.modal-cont {
+  height: 50vh;
+  width: 45vw;
+  background: lightblue;
+  /* position: absolute; */
+  top: calc((100vh - 50vh) / 2);
+  left: calc((100vw - 45vw) / 2);
+  display: none;
+ 
+}
+.submitOrnot{
+  height: 10vh;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+}
+.in-btn{
+  height: 60%;
+  width: 40%;
+  border: none;
+  border-radius: 8px;
+  background-color:lightblue;
+  font-size: larger;
+  color: darkblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.in-btn:hover{
+background: white;
+border: 2px solid black;
+}
+
+.text-area {
+  width: 75%;
+  height: 100%;
+  background-color: lightblue;
+  resize: none;
+  border: none;
+  outline: none;
+}
+
+.priority-color-cont {
+  width: 25%;
+  height: 100%;
+  background: #e4f9f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.priority-color {
+  height: 3rem;
+  width: 60%;
+  border-radius: 4px;
+}
+.priorityCol_boder {
+  border: 3px solid black;
+}
+.ticket-cont {
+  background-color: lightblue;
+  width: 15rem;
+  height: 10rem;
+  border-radius: 8px;
+}
+.ticket-color {
+  height: 1rem;
+  border-radius: 4px;
+}
+.ticket-id {
+  height: 2rem;
+  background-color: rgb(225, 238, 144);
+  padding: 0.4rem;
+}
+.ticket-task-area {
+  height: calc(100% - 3rem);
+  background-color: rgb(229, 200, 240);
+  padding: 0.4rem;
+  border-radius: 4px;
+}
+.main-cont {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+
+ 
+
+/* responshive for mobile  widght <425 px  */
+
+/* for tablet view */
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .modal-cont {
+    width: 55vw;
+    height: 50vw;
+    top: calc((100vh - 50vh) / 2);
+    left: calc((100vw - 55vw) / 2);
+  }
+  .mainUper-cont{
+    width: 55vw;
+    height: 50vw;
+    top: calc((100vh - 50vh) / 2);
+    left: calc((100vw - 55vw) / 2);
+  }
+}
+/* for mobile view */
+
+@media screen and (min-width:375px)and (max-width: 426px) {
+  .modal-cont {
+    height: 55vw;
+    width: 70vw;
+    top: calc((100vh - 55vh) / 2);
+    left: calc((100vw - 70vw) / 2);
+  }
+  .mainUper-cont{
+    height: 55vw;
+    width: 70vw;
+    top: calc((100vh - 55vh) / 2);
+    left: calc((100vw - 70vw) / 2);
+  }
+  .tool-property-cont {
+    width: 16rem;
+  }
+  .tool-btn-cont {
+    width: 7rem;
+  }
+  .color{
+    width:2.8rem;
+  }
+  .priority-color{
+    height: 2.7rem;
+    height: 1.8rem
+  }
+  .in-btn{
+    font-size: medium;
+  }
+}
+/* lowest screen */
+@media screen and (max-width: 376px) {
+  .modal-cont {
+    height: 60vw;
+    width: 70vw;
+    top: calc((100vh - 60vh) / 2);
+    left: calc((100vw - 70vw) / 2);
+  }
+  .mainUper-cont{
+    height: 60vw;
+    width: 70vw;
+    top: calc((100vh - 60vh) / 2);
+    left: calc((100vw - 70vw) / 2);
+  }
+  .tool-property-cont {
+    width: 14rem;
+  }
+  .tool-btn-cont {
+    width: 6rem;
+  }
+  .color{
+    width:2.5rem;
+  }
+  .priority-color{
+    height: 2.7rem;
+    height: 1.8rem
+  }
+  .in-btn{
+    font-size: medium;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>MyNotes</title>
+  </head>
+  <body>
+    <!-- toolBox -->
+    <div class="toolbox">
+      <div class="tool-property-cont">
+        <div class="lightpink color toolbox-prioColor"></div>
+        <div class="lightgreen color toolbox-prioColor"></div>
+        <div class="lightblue color toolbox-prioColor"></div>
+        <div class="violet color toolbox-prioColor  priorityCol_boder"></div>
+      </div>
+      <div class="tool-btn-cont">
+        <div class="add-btn">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="remobtn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+    </div>
+    <!-- maincontaner -->
+    <div class="main-cont"></div>
+
+    <div class="mainUper-cont">
+    <div class="modal-cont">
+      <textarea class="text-area"></textarea>
+      <div class="priority-color-cont">
+        <div class="priority-color lightpink "></div>
+        <div class="priority-color lightgreen "></div>
+        <div class="priority-color lightblue "></div>
+        <div class="priority-color violet priorityCol_boder"></div>
+      </div>
+    
+    </div>
+    <div class="submitOrnot">
+      <input type="button" value="submit" class="in-btn submit">
+      <input type="button" value="cancel" class="in-btn cancel">
+    </div>
+  </div>
+    
+    </div>
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
